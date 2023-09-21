@@ -15,6 +15,7 @@ function NavBar(props) {
     return( <>
     <div id='navcontenedor'>
     <nav>{navLinks}</nav>
+    <br />
     <img src={props.imagen}/>
     </div>
     </>
