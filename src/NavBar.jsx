@@ -11,9 +11,50 @@ function NavBar(props) {
       )
     });
 
-    return( 
-    <>
-      <div id='navcontenedor'>
+    return (
+      <>
+        <div id='navcontenedor'>
+          <nav>{navLinks}</nav>
+          <iframe
+            width="100%"
+            height="450"
+            scrolling="no"
+            frameBorder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1619845251&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+          ></iframe>
+          <div
+            style={{
+              fontSize: '10px',
+              color: '#cccccc',
+              overflow: 'hidden',
+              whiteSpace: 'nowrap',
+              textOverflow: 'ellipsis',
+              fontFamily:
+                'Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif',
+              fontWeight: 100,
+            }}
+          >
+            <a
+              href="https://soundcloud.com/blackoutmusicnl"
+              title="Blackout Music NL"
+              target="_blank"
+              style={{ color: '#cccccc', textDecoration: 'none' }}
+            >
+              Blackout Music NL
+            </a>{' '}
+            ·{' '}
+            <a
+              href="https://soundcloud.com/blackoutmusicnl/emperor-pranged-out-1"
+              title="Emperor - Pranged Out"
+              target="_blank"
+              style={{ color: '#cccccc', textDecoration: 'none' }}
+            >
+              Emperor - Pranged Out
+            </a>
+          </div>
+        </div>
+        <div id='navcontenedor'>
         <nav>{navLinks}</nav>
         <iframe
           width="100%"
@@ -56,8 +97,9 @@ function NavBar(props) {
           </a>
         </div>
       </div>
-    </>
-    )
+      </>
+      
+    );
 }
 
 export default NavBar;
