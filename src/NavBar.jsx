@@ -55,7 +55,6 @@ function NavBar(props) {
           </div>
         </div>
         <div id='navcontenedor'>
-        <nav>{navLinks}</nav>
         <iframe
           width="100%"
           height="450"
