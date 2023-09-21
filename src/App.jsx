@@ -10,6 +10,7 @@ function App() {
     <>
       <div>
         <NavBar imagen={bacalar}/>
+        <img src={bacalar} alt="" />
       </div>
       
     </>
